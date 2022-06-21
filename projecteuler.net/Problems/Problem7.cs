@@ -1,7 +1,4 @@
-﻿using System;
-using System.Globalization;
-
-namespace projecteuler.net.Problems
+﻿namespace projecteuler.net.Problems
 {
     internal class Problem7 : IProblem
     {

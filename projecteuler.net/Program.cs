@@ -1,5 +1,4 @@
-﻿using System;
-using projecteuler.net.Problems;
+﻿using projecteuler.net.Problems;
 
 namespace projecteuler.net
 {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Globalization;
-
-namespace projecteuler.net.Problems
+﻿namespace projecteuler.net.Problems
 {
     internal class Problem14 : IProblem
     {
@@ -15,7 +12,7 @@ namespace projecteuler.net.Problems
                 var currentNumber = i;
                 while(currentNumber > 1)
                 {
-                    currentNumber = GetNext(currentNumber);
+                    currentNumber = this.GetNext(currentNumber);
                     chainLenght++;
                 }
 

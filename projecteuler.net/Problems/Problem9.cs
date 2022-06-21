@@ -1,7 +1,4 @@
-﻿using System;
-using System.Globalization;
-
-namespace projecteuler.net.Problems
+﻿namespace projecteuler.net.Problems
 {
     internal class Problem9 : IProblem
     {
@@ -12,7 +9,7 @@ namespace projecteuler.net.Problems
                 for(var b = 1; b < 500; b++)
                 {
                     var c = 1000 - a - b;
-                    if(IsTriangle(a, b, c))
+                    if(this.IsTriangle(a, b, c))
                         return a * b * c;
                 }
             }

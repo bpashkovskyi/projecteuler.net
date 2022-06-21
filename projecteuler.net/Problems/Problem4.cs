@@ -1,19 +1,16 @@
-﻿using System;
-using System.Globalization;
-
-namespace projecteuler.net.Problems
+﻿namespace projecteuler.net.Problems
 {
     internal class Problem4 : IProblem
     {
         public object Solve()
         {
             var maxPalindrome = 0;
-            for(int i = 100; i < 1000; i++)
+            for(var i = 100; i < 1000; i++)
             {
-                for(int j = i; j < 1000; j++)
+                for(var j = i; j < 1000; j++)
                 {
                     var ij = i * j;
-                    if(IsPalindrom(ij.ToString()) && ij > maxPalindrome)
+                    if(this.IsPalindrom(ij.ToString()) && ij > maxPalindrome)
                         maxPalindrome = ij;
                 }
             }
@@ -22,12 +19,12 @@ namespace projecteuler.net.Problems
 
         private bool IsPalindrom(string input)
         {
-            return input.Equals(Reverse(input));
+            return input.Equals(this.Reverse(input));
         }
 
         private string Reverse(string input)
         {
-            char[] charArray = input.ToCharArray();
+            var charArray = input.ToCharArray();
             Array.Reverse(charArray);
             return new string(charArray);
         }
