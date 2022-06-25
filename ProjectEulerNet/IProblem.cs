@@ -1,4 +1,4 @@
-﻿namespace projecteuler.net
+﻿namespace ProjectEulerNet
 {
     interface IProblem
     {

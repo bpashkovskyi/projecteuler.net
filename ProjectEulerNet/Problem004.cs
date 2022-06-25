@@ -1,16 +1,16 @@
-﻿namespace projecteuler.net.Problems
+﻿namespace ProjectEulerNet
 {
-    internal class Problem4 : IProblem
+    internal class Problem004 : IProblem
     {
         public object Solve()
         {
             var maxPalindrome = 0;
-            for(var i = 100; i < 1000; i++)
+            for (var i = 100; i < 1000; i++)
             {
-                for(var j = i; j < 1000; j++)
+                for (var j = i; j < 1000; j++)
                 {
                     var ij = i * j;
-                    if(this.IsPalindrom(ij.ToString()) && ij > maxPalindrome)
+                    if (this.IsPalindrom(ij.ToString()) && ij > maxPalindrome)
                         maxPalindrome = ij;
                 }
             }

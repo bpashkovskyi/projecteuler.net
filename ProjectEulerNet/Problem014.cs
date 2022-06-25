@@ -1,6 +1,6 @@
-﻿namespace projecteuler.net.Problems
+﻿namespace ProjectEulerNet
 {
-    internal class Problem14 : IProblem
+    internal class Problem014 : IProblem
     {
         public object Solve()
         {
