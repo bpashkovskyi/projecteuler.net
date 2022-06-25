@@ -6,7 +6,7 @@
         {
             var current = 1;
             var i = 2;
-            while(this.GetDividersCount(current) < 500)
+            while (GetDividersCount(current) < 500)
             {
                 current += i;
                 i++;
@@ -15,18 +15,23 @@
 
         }
 
-        private int GetDividersCount(int number)
+        private static int GetDividersCount(int number)
         {
             var dividersCount = 0;
-            for(var i = 1; i < Math.Sqrt(number); i++)
+            for (var i = 1; i < Math.Sqrt(number); i++)
             {
-                if(number % i == 0)
+                if (number % i == 0)
                     dividersCount++;
             }
-            dividersCount = dividersCount * 2;
+
+            dividersCount *= 2;
+
             var sqrt = (int)Math.Sqrt(number);
-            if(sqrt * sqrt == number)
+            if (sqrt * sqrt == number)
+            {
                 dividersCount++;
+            }
+
             return dividersCount;
         }
     }

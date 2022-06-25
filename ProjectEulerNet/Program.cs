@@ -6,7 +6,7 @@
     {
         static void Main()
         {
-            IProblem problem = new Problem020();
+            IProblem problem = new Problem001();
 
             var stopWatch = Stopwatch.StartNew();
 
@@ -14,7 +14,8 @@
             
             stopWatch.Stop();
 
-            Console.WriteLine(result);
+            Console.WriteLine($"Result: {result}");
+            Console.WriteLine($"Execution time: {stopWatch.Elapsed.TotalMilliseconds} ms.");
             Console.ReadKey(true);
         }
     }

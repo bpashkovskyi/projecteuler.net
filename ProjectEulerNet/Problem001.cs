@@ -6,15 +6,18 @@
     {
         public object Solve()
         {
-            long sum = 0;
+            var target = 999;
 
-            for (var i = 1; i < 1000; i++)
+            return SumDivisibleBy(3)(target) + SumDivisibleBy(5)(target) - SumDivisibleBy(15)(target);
+        }
+
+        private static Func<int, int> SumDivisibleBy(int n)
+        {
+            return target =>
             {
-                if ((i % 3 == 0) || (i % 5 == 0))
-                    sum += i;
-            }
-
-            return sum;
+                var p = target / n;
+                return n * (p * (p + 1)) / 2;
+            };
         }
     }
 }

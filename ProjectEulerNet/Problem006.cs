@@ -4,10 +4,10 @@
     {
         public object Solve()
         {
-            return this.SqrSum(100) - this.SumSqr(100);
+            return SqrSum(100) - SumSqr(100);
         }
 
-        private long SqrSum(int count)
+        private static long SqrSum(int count)
         {
             long sum = 0;
             for (var i = 0; i <= count; i++)
@@ -15,7 +15,7 @@
             return sum * sum;
         }
 
-        private long SumSqr(int count)
+        private static long SumSqr(int count)
         {
             long sum = 0;
             for (var i = 0; i <= count; i++)
